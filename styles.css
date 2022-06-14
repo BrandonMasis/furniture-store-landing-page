@@ -2,6 +2,51 @@ img {
     width: 300px;
 }
 
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo i {
+    font-size: 40px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: rgb(66, 66, 66);
+
+}
+
+.nav-links li a:hover {
+    border-bottom: 1px black solid;
+}
+
+.nav-signin {
+    font-weight: bold;
+    padding: 7px 22px;
+    background-color: black;
+    border: none;
+    color: aliceblue;
+}
+
+
 #hero-span-img img {
     width: 80px;
     height: 30px;
