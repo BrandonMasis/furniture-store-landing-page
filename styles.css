@@ -35,7 +35,7 @@ img {
 }
 
 .nav-links li a:hover {
-    border-bottom: 1px black solid;
+    border-bottom: 1px rgb(2, 2, 2) solid;
 }
 
 .nav-signin {
