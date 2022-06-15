@@ -1,3 +1,28 @@
+:root {
+    --black: #1E1E1E;
+    --gray: #898989;
+    --light-gray: #f9f9f9;
+    --dark-gray: #4E4E4E;
+    --yellow: #FAC456;
+}
+
+
+
+p {
+    font-family: 'Nunito Sans', sans-serif;
+    color: var(--gray);
+    font-size: 2vh;
+}
+
+.wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* NAVBAR */
 img {
     width: 300px;
 }
@@ -6,53 +31,207 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
+    max-width: 1300px;
 }
 
 .logo {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 15px;
+    gap: 10px;
 }
 
 .logo i {
-    font-size: 40px;
+    font-size: 25px;
+    color: var(--black);
+}
+
+.logo h1 {
+    font-family: 'Libre Franklin', sans-serif;
+    color: var(--black);
+    font-size: 1.2em;
+    font-weight: 700;
+    margin: 0;
 }
 
 .nav-links {
     display: flex;
-    gap: 30px;
+    gap: 40px;
+    padding: 0;
+    justify-content: space-between;
+
 }
 
 .nav-links li {
     list-style: none;
+
 }
 
 .nav-links li a {
     text-decoration: none;
-    color: rgb(66, 66, 66);
-
+    color: var(--gray);
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 700;
+    font-size: 1em;
 }
 
 .nav-links li a:hover {
     border-bottom: 1px rgb(2, 2, 2) solid;
+    color: var(--black);
 }
 
 .nav-signin {
     font-weight: bold;
-    padding: 7px 22px;
-    background-color: black;
+    padding: 10px 30px;
+    font-weight: 700;
+    font-family: 'Nunito Sans', sans-serif;
+    background-color: var(--black);
     border: none;
-    color: aliceblue;
+    color: white;
+    cursor: pointer;
 }
 
+.nav-signin:hover {
+    background-color: var(--dark-gray);
+}
+
+/* HERO */
+
+.hero-container {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin: 60px;
+    max-width: 1300px;
+    flex-wrap: wrap;
+}
+
+
+.h1text * {
+    margin: 0;
+
+}
+
+.h1text h1:nth-child(3) {
+    text-decoration: underline 3px #4E4E4E;
+}
+
+.hero-container .text {
+    /* width: 35%; */
+    flex-basis: 30%;
+    align-self: flex-end;
+    min-width: 400px;
+}
+
+.hero-container .text .text1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-container .text h1 {
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 3.306em;
+}
+
+/* .hero-container .text p {
+    font-family: 'Nunito Sans', sans-serif;
+    color: var(--gray);
+    font-size: 14px;
+} */
+
+.hero-container .image {
+    max-width: 400px;
+    max-height: 520px;
+
+
+}
+
+
+.hero-container .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 20% 80%;
+}
 
 #hero-span-img img {
-    width: 80px;
+    width: 180px;
     height: 30px;
     border-radius: 50px;
+    object-position: 70% 15%;
     object-fit: cover;
 }
+
+.hero-btns {
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    margin: 30px 0px;
+
+}
+
+.hero-btns * {
+    flex: 1 0 50%;
+    border-style: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.get-started {
+    background-color: #1E1E1E;
+    color: white;
+}
+
+.get-started:hover {
+    background-color: var(--dark-gray);
+}
+
+.watch-video {
+    border: solid 1px #1E1E1E;
+    background-color: white;
+}
+
+.watch-video:hover {
+    background-color: var(--gray);
+    color: white;
+}
+
+.watch-video i {
+    margin-right: 5px;
+}
+
+.stats {
+    display: flex;
+}
+
+.stat {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    justify-content: center;
+
+}
+
+.stat h2,
+.stat p {
+    margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .membership-container {
     width: 800px;
@@ -72,4 +251,39 @@ img {
 
 footer {
     margin-top: 300px;
+}
+
+
+/* media queries */
+
+@media only screen and (max-width: 840px) {
+    .hero-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .hero-container .image {
+        width: 100%;
+        height: 200px;
+    }
+
+
+
+    .h1text {
+        min-width: 400px;
+    }
+
+    .hero-container .text h1 {
+        font-family: 'Libre Franklin', sans-serif;
+        font-size: 2.8em;
+    }
+
+    .hero-container .text .text1 {
+        max-width: 400px;
+
+    }
+
 }
