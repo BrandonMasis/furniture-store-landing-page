@@ -4,14 +4,37 @@
     --light-gray: #f9f9f9;
     --dark-gray: #4E4E4E;
     --yellow: #FAC456;
+    --main-font: 'Libre Franklin', sans-serif;
+    --sub-font: 'Nunito Sans', sans-serif;
 }
 
 
+body {
+    margin: 0;
+}
 
 p {
     font-family: 'Nunito Sans', sans-serif;
     color: var(--gray);
-    font-size: 2vh;
+    font-size: 1em;
+}
+
+h2 {
+    font-family: var(--main-font);
+    font-size: 2.2em;
+}
+
+h3 {
+    font-family: var(--sub-font);
+}
+
+h4 {
+    font-family: var(--sub-font);
+}
+
+#subtitle {
+    color: var(--dark-gray);
+    margin: 0;
 }
 
 .wrap {
@@ -19,36 +42,35 @@ p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
 }
 
 /* NAVBAR */
-img {
-    width: 300px;
-}
+
 
 .nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    max-width: 1300px;
+    max-width: 65em;
+    margin-top: 1em;
 }
 
 .logo {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 10px;
+    gap: 0.3em;
+    margin-left: 1em;
 }
 
 .logo i {
-    font-size: 25px;
+    font-size: 1.4em;
     color: var(--black);
 }
 
 .logo h1 {
-    font-family: 'Libre Franklin', sans-serif;
+    font-family: var(--main-font);
     color: var(--black);
     font-size: 1.2em;
     font-weight: 700;
@@ -57,9 +79,10 @@ img {
 
 .nav-links {
     display: flex;
-    gap: 40px;
+    gap: 3em;
     padding: 0;
     justify-content: space-between;
+    flex-wrap: wrap;
 
 }
 
@@ -71,7 +94,7 @@ img {
 .nav-links li a {
     text-decoration: none;
     color: var(--gray);
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: var(--sub-font);
     font-weight: 700;
     font-size: 1em;
 }
@@ -85,11 +108,12 @@ img {
     font-weight: bold;
     padding: 10px 30px;
     font-weight: 700;
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: var(--sub-font);
     background-color: var(--black);
     border: none;
     color: white;
     cursor: pointer;
+    margin-right: 1em;
 }
 
 .nav-signin:hover {
@@ -130,21 +154,14 @@ img {
 }
 
 .hero-container .text h1 {
-    font-family: 'Libre Franklin', sans-serif;
+    font-family: var(--main-font);
     font-size: 3.306em;
 }
 
-/* .hero-container .text p {
-    font-family: 'Nunito Sans', sans-serif;
-    color: var(--gray);
-    font-size: 14px;
-} */
 
 .hero-container .image {
     max-width: 400px;
     max-height: 520px;
-
-
 }
 
 
@@ -211,6 +228,8 @@ img {
     flex-direction: column;
     padding: 10px;
     justify-content: center;
+    align-items: center;
+    flex: 1;
 
 }
 
@@ -219,19 +238,213 @@ img {
     margin: 0;
 }
 
+.stat h2 {
+    font-size: 1.8em;
+}
+
+.stat p {
+    font-size: 0.8em;
+    flex: 1;
+}
+
+/* Features */
+.features {
+    background-color: var(--black);
+    width: 100%;
+    height: 25em;
+    display: flex;
+    justify-content: center;
+
+}
+
+.features-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 65em;
+    margin: 3em;
+}
+
+.features-container h2,
+.features-container h3 {
+    color: white;
+    margin: 0;
+}
+
+.features-container h2 {
+    font-size: 2.5em;
+}
+
+.features-container h4 {
+    font-size: 1.2em;
+    margin-bottom: 0em;
+}
+
+.features-container p {
+    margin: 0.2em;
+}
+
+.features-items {
+    display: flex;
+    gap: 10em;
+}
+
+.features-items i {
+    margin-right: 0.4em;
+}
+
+.features-items h4 {
+    color: white;
+}
+
+/* Categories */
+
+.categories {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.categories-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4em;
+    max-width: 65em;
+    margin-top: 3em;
+}
+
+.categories-container .text {
+    max-width: 25em;
+}
+
+.categories-container .images {
+    max-width: 500px;
+    flex-basis: 40%;
+    flex-grow: 1;
+    object-fit: cover;
+
+
+}
+
+.categories-container .images img {
+    width: 100%;
+    height: 100%;
+}
+
+.categories-container h3 {
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+}
+
+.categories-container .text p {
+    display: none;
+    margin: 0;
+
+}
+
+.categories-container .living-room p {
+    display: block;
+}
+
+.living-room {
+    background-color: #1E1E1E;
+    padding: 1em 1em;
+}
+
+.living-room h3 {
+    color: #f9f9f9;
+    margin: 0;
+    margin-bottom: 0.2em;
+}
+
+.categories-container h2 {
+    margin: 0;
+    margin-bottom: 0.6em;
+}
+
+
+/* Our product */
+.our-product {
+    margin-top: 3em;
+    padding-top: 3em;
+    background-color: var(--light-gray);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.our-product-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 65em;
+    align-items: center;
+
+}
+
+.our-product h2 {
+    margin: 0;
+    margin-top: 0.1em;
+}
+
+.options {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.options a {
+    text-decoration: none;
+    color: var(--gray);
+    font-family: var(--sub-font);
+    font-weight: 700;
+    font-size: 0.9em;
+}
+
+
+.our-product img {
+    max-width: 24em;
+    max-height: 20em;
+}
 
 
 
+.options li a:hover {
+    border-bottom: 1px rgb(2, 2, 2) solid;
+    color: var(--black);
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 65em;
+    gap: 2em;
+}
+
+.gallery .left,
+.gallery .right {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 40%;
+    gap: 1em;
+}
+
+.gallery .left .tag {
+    display: flex;
+}
+
+.gallery .left .item:nth-child(1) {
+    background-color: white;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
 
 
-
-
-
-
-
-
-
-
+.gallery .right .item img {
+    width: 100%;
+    height: 100%;
+}
 
 .membership-container {
     width: 800px;
@@ -241,17 +454,13 @@ img {
     background-size: cover;
 }
 
-.darken {
-    width: 100%;
-    height: 100%;
-    background-color: rgba(20, 20, 20, 0.623);
-    padding: 0;
-    margin: 0;
-}
+
 
 footer {
     margin-top: 300px;
 }
+
+
 
 
 /* media queries */
