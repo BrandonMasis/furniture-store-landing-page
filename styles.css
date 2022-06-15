@@ -413,6 +413,10 @@ h4 {
 }
 
 
+ul.options {
+    padding: 0;
+    gap: 1em;
+}
 
 .options li a:hover {
     border-bottom: 1px rgb(2, 2, 2) solid;
@@ -521,7 +525,7 @@ h4 {
 }
 
 .membership-container h2,
-p {
+.membership-container p {
     color: #f9f9f9;
     margin: 0;
 }
@@ -627,6 +631,7 @@ footer {
 .newsletter-input input {
     border: none;
     background-color: transparent;
+    width: 28em;
 
 }
 
@@ -634,6 +639,7 @@ footer {
     border-bottom: 2px solid white;
     display: flex;
     justify-content: space-between;
+
 }
 
 .newsletter-input .submit-btn {
