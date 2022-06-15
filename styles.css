@@ -508,7 +508,7 @@ h4 {
 
 .membership-container {
     width: 65em;
-    height: 30em;
+    height: 25em;
     background-image: url(./images/membership.jpg);
     background-position: center;
     background-size: cover;
@@ -517,6 +517,7 @@ h4 {
     justify-content: center;
     align-items: center;
     gap: 1.5em;
+    margin-top: 3em;
 }
 
 .membership-container h2,
