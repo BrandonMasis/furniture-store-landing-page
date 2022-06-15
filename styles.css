@@ -104,7 +104,11 @@ h4 {
     color: var(--black);
 }
 
-.nav-signin {
+#nav-signin {
+    margin-right: 1em;
+}
+
+.button {
     font-weight: bold;
     padding: 10px 30px;
     font-weight: 700;
@@ -113,10 +117,9 @@ h4 {
     border: none;
     color: white;
     cursor: pointer;
-    margin-right: 1em;
 }
 
-.nav-signin:hover {
+.button:hover {
     background-color: var(--dark-gray);
 }
 
@@ -367,6 +370,7 @@ h4 {
 .our-product {
     margin-top: 3em;
     padding-top: 3em;
+    padding-bottom: 3em;
     background-color: var(--light-gray);
     width: 100%;
     display: flex;
@@ -433,6 +437,49 @@ h4 {
 
 .gallery .left .tag {
     display: flex;
+    padding: 1em;
+}
+
+.tag .description h3 {
+    margin: 0;
+
+
+}
+
+.tag .price h2 {
+    font-size: 1.8em;
+    margin: 0;
+    font-size: 1.6em;
+    font-weight: 600;
+}
+
+.tag .description p {
+    margin: 0;
+    flex-basis: 20%;
+}
+
+.tag .description {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 0.3em;
+}
+
+.tag .price {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 1em;
+    flex-basis: 30%;
+
+}
+
+
+.gallery .left .tag .price i {
+    color: #FAC456;
+    font-size: 0.8em;
 }
 
 .gallery .left .item:nth-child(1) {
@@ -446,21 +493,153 @@ h4 {
     height: 100%;
 }
 
+.our-product button {
+    margin-top: 1.5em;
+}
+
+.our-product button a {
+    text-decoration: none;
+    color: #f9f9f9;
+}
+
+
+
+
+
 .membership-container {
-    width: 800px;
-    height: 300px;
+    width: 65em;
+    height: 30em;
     background-image: url(./images/membership.jpg);
     background-position: center;
     background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5em;
+}
+
+.membership-container h2,
+p {
+    color: #f9f9f9;
+    margin: 0;
+}
+
+.membership-container h2 {
+    font-size: 2.7em;
+}
+
+.membership-container .button {
+    width: 12em;
+
 }
 
 
+
+
+
+.membership-container .button a {
+    color: #f9f9f9;
+    text-decoration: none;
+}
 
 footer {
-    margin-top: 300px;
+    margin-top: 3em;
+    background-color: #1E1E1E;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
+.footer-container {
+    display: flex;
+    justify-content: center;
+    padding: 3em;
+    max-width: 65em;
+    gap: 15em;
 
+}
+
+.footer-container .logo i,
+.footer-container .logo h1 {
+    color: #f9f9f9;
+    font-size: 2em;
+}
+
+.footer-container .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-basis: 30em;
+}
+
+.footer-container .left p {
+    margin-bottom: 5em;
+    margin-top: 1em;
+}
+
+.footer-container .right {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 60%;
+}
+
+.footer-container .right .options ul {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+
+}
+
+.footer-container .right .options {
+    gap: 2em;
+}
+
+.footer-container .right .options div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 1;
+}
+
+.footer-container .right .options div:nth-child(2) {
+    flex-grow: 1.5;
+}
+
+.footer-container .right .options ul {
+    list-style: none;
+    display: flex;
+    gap: 1em;
+    font-size: 1.13em;
+}
+
+.footer-container .right .options ul a:hover {
+    color: #f9f9f9;
+    border: none;
+}
+
+.footer-container .right h3 {
+    color: #f9f9f9;
+}
+
+.newsletter-input input {
+    border: none;
+    background-color: transparent;
+
+}
+
+.newsletter-input {
+    border-bottom: 2px solid white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.newsletter-input .submit-btn {
+    background-color: #f9f9f9;
+    color: #1E1E1E;
+    font-size: 1 em;
+}
 
 
 /* media queries */
