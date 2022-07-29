@@ -631,9 +631,14 @@ footer {
 .newsletter-input input {
     border: none;
     background-color: transparent;
-    width: 28em;
-
+    width: 28em;   
+    color: var(--light-gray);
+    font-size: 1.1em;
+    font-family: var(--main-font);
 }
+
+.newsletter-input input:focus-visible {
+    outline: none;}
 
 .newsletter-input {
     border-bottom: 2px solid white;
